@@ -1,0 +1,223 @@
+.section {
+    position: absolute;
+
+    // .section__form
+    &__footer {
+        background: #3B434F;
+    }
+
+    &__form {
+        z-index: 111;
+        background: #FFFFFF;
+        box-shadow: 0px -10px 150px rgba(80, 88, 100, 0.05);
+        border-radius: 20px;
+        position: relative;
+        bottom: 350px;
+        right: 0;
+        padding: 120px 0;
+        max-width: 1160px;
+
+        margin: 0 auto;
+
+        @media(max-width: $breakpoint992) {
+            max-width: 740px;
+        }
+
+        @media(max-width: $breakpoint768) {
+            max-width: 80%;
+        }
+    }
+}
+
+.container {}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.docer {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.form {
+    padding-bottom: 48px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    // .form__title
+    gap: 40px;
+    padding-top: 74px;
+
+    @media(max-width: $breakpoint768) {
+        padding-top: 40px;
+        padding-bottom: 34px;
+    }
+
+    &__list {
+        max-width: 516px;
+
+        @media(max-width: $breakpoint992) {
+            max-width: 200px;
+
+            margin-right: 100px;
+        }
+
+        @media(max-width: $breakpoint768) {
+            margin: 0;
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+
+    &__title {
+        padding-bottom: 16px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 180%;
+        /* or 32px */
+
+
+        color: #1D2736;
+
+        @media(max-width: $breakpoint768) {
+            font-size: 16px;
+            line-height: 130%;
+            text-align: center;
+        }
+
+        @media(max-width: $breakpoint480) {
+            font-size: 14px;
+        }
+    }
+
+    // .form__input
+
+    &__input {
+        padding: 24px 185px 24px 32px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 180%;
+        /* or 32px */
+        background: #F7F9FD;
+        border: 1px solid #DFE8FA;
+        border-radius: 15px;
+
+        @media(max-width: $breakpoint992) {
+            padding: 18px 70px 18px 32px;
+        }
+
+        @media(max-width: $breakpoint768) {
+            font-size: 14px;
+            line-height: 140%;
+
+            padding: 18px 130px 18px 17px;
+        }
+
+        @media(max-width: $breakpoint480) {
+            padding: 14px 0px 14px 12px;
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+}
+
+.form__btn {
+    margin: 0 auto;
+    display: flex;
+}
+
+.social {
+    padding: 0 30px 0;
+}
+
+.footer {
+    // .footer__list
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 200px;
+    right: 0;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+
+        @media(max-width: $breakpoint768) {
+            flex-wrap: wrap;
+        }
+        @media(max-width: $breakpoint480) {
+        justify-content: center;
+        align-items: center;
+        }
+    }
+
+    // .footer__item
+
+    &__item {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        /* identical to box height */
+
+        color: rgba(255, 255, 255, 1);
+        display: flex;
+        flex-direction: column;
+
+        @media(max-width: $breakpoint768) {
+            font-size: 16px;
+            line-height: 22px;
+            text-align: center;
+        }
+    }
+
+    // .footer__social
+
+
+
+    &__logo {
+        padding-bottom: 86px;
+    }
+
+    // .footer__title
+
+    &__title {
+        padding-bottom: 32px;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    // .footer__text
+
+    &__text {
+        padding-bottom: 32px;
+        color: rgba(255, 255, 255, 1);
+    }
+}
+
+.copyright {
+    padding-top: 86px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+
+    opacity: 0.5;
+
+    @media(max-width: $breakpoint768) {
+        font-size: 15px;
+        line-height: 23px;
+    }
+
+}
