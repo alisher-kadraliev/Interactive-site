@@ -215,21 +215,13 @@ tabs('.tabs__header', '.tabs__header-item', '.tabs__content-item', 'active')
 //swiper
 const swiper = new Swiper('.swiper', {
 
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-    },
-
     // Navigation arrows
     navigation: {
-        nextEl: '.swiper-btn-next',
-        prevEl: '.swiper-btn-prev',
+        nextEl: '.next__btn',
+        prevEl: '.prev__btn',
     },
 
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
-    },
+
 
     //   // Responsive breakpoints
     //   breakpoints: {

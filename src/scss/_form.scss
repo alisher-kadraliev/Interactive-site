@@ -134,7 +134,15 @@
 }
 
 .social {
-    padding: 0 30px 0;
+    padding-right: 30px;
+    transition: transform .3s;
+
+    &:hover {
+        transition: .3s all ease;
+        transform: scale(1.1);
+    }
+
+    @media(max-width: $breakpoint768) {}
 }
 
 .footer {
@@ -145,17 +153,28 @@
     bottom: 200px;
     right: 0;
 
+    &__item-list {
+        display: flex;
+        gap: 55px;
+
+        @media(max-width: $breakpoint768) {
+            padding-top: 50px;
+        }
+    }
+
     &__list {
         display: flex;
         justify-content: space-between;
-        gap: 30px;
 
         @media(max-width: $breakpoint768) {
-            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
+
         @media(max-width: $breakpoint480) {
-        justify-content: center;
-        align-items: center;
+            justify-content: center;
+            align-items: center;
         }
     }
 
@@ -185,6 +204,10 @@
 
     &__logo {
         padding-bottom: 86px;
+
+        @media(max-width: $breakpoint768) {
+            padding-bottom: 40px;
+        }
     }
 
     // .footer__title
@@ -192,6 +215,11 @@
     &__title {
         padding-bottom: 32px;
         color: rgba(255, 255, 255, 1);
+
+        &:hover {
+            color: $secondary;
+            transition: .3s all ease;
+        }
     }
 
     // .footer__text
@@ -199,6 +227,11 @@
     &__text {
         padding-bottom: 32px;
         color: rgba(255, 255, 255, 1);
+
+        &:hover {
+            color: $secondary;
+            transition: .3s all ease;
+        }
     }
 }
 
@@ -209,7 +242,7 @@
     font-size: 18px;
     line-height: 27px;
     /* identical to box height */
-
+    text-align: center;
 
     color: #FFFFFF;
 

@@ -30,7 +30,7 @@
                             Sales</a></li>
                 </ul>
                 <div class="nav__btns">
-                    <button class="nav__btn active">Sign up</button>
+                    <button class="nav__btn active">Sign  up</button>
                     <!-- Select -->
                     <div id="select">
                         <input type="hidden" class="hidden__input">
@@ -245,16 +245,43 @@
         <section class="section__info" id="Use Case">
     <div class="container">
         <div class="info">
+            <div class="arrows">
+                <button class="slide__btn prev__btn"><svg width="50" height="51" viewBox="0 0 50 51" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25.002" r="24" stroke="#1D2736" stroke-width="2" />
+                        <line x1="18" y1="25.002" x2="32" y2="25.002" stroke="#1D2736" stroke-width="2"
+                            stroke-linecap="round" />
+                        <line x1="29.4142" y1="21.002" x2="33" y2="24.5877" stroke="#1D2736" stroke-width="2"
+                            stroke-linecap="round" />
+                        <line x1="29" y1="28.5877" x2="32.5858" y2="25.002" stroke="#1D2736" stroke-width="2"
+                            stroke-linecap="round" />
+                    </svg>
+
+                </button>
+                <button class="slide__btn next__btn"><svg width="50" height="51" viewBox="0 0 50 51" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="25" cy="25.002" r="24" stroke="#1D2736" stroke-width="2" />
+                        <line x1="18" y1="25.002" x2="32" y2="25.002" stroke="#1D2736" stroke-width="2"
+                            stroke-linecap="round" />
+                        <line x1="29.4142" y1="21.002" x2="33" y2="24.5877" stroke="#1D2736" stroke-width="2"
+                            stroke-linecap="round" />
+                        <line x1="29" y1="28.5877" x2="32.5858" y2="25.002" stroke="#1D2736" stroke-width="2"
+                            stroke-linecap="round" />
+                    </svg>
+
+                </button>
+            </div>
             <!-- Slider main container -->
             <div class="swiper">
                 <!-- Additional required wrapper -->
-                <div class="swiper-btn-prev"><img src="./img/arrowleft.svg" alt=""></div>
                 <div class="swiper-wrapper">
                     <!-- Slides -->
 
                     <div class="swiper-slide">
-                        <img src="./img/info-img.png" alt="" class="info__img">
-                        <img src="./img/play.png" alt="" class="info__play">
+                        <div class="info__main">
+                            <img src="./img/info-img.png" alt=""><a href="" class="info__play"><img src="./img/play.png"
+                                    alt=""></a>
+                        </div>
                         <div class="swiper__info">
                             <div class="info__title">
                                 Christophe Bourand, ChrisWebMarketing
@@ -269,7 +296,11 @@
                             <img src="./img/info2.png" alt="">
                         </div>
                     </div>
-                    <div class="swiper-slide"><img src="./img/info-img.png" alt="">
+                    <div class="swiper-slide">
+                        <div class="info__main">
+                            <img src="./img/info-img.png" alt=""><a href="" class="info__play"><img src="./img/play.png"
+                                    alt=""></a>
+                        </div>
                         <div class="swiper__info">
                             <div class="info__title">
                                 Christophe Bourand, ChrisWebMarketing
@@ -284,7 +315,11 @@
                             <img src="./img/info2.png" alt="">
                         </div>
                     </div>
-                    <div class="swiper-slide"><img src="./img/info-img.png" alt="">
+                    <div class="swiper-slide">
+                        <div class="info__main">
+                            <img src="./img/info-img.png" alt=""><a href="" class="info__play"><img src="./img/play.png"
+                                    alt=""></a>
+                        </div>
                         <div class="swiper__info">
                             <div class="info__title">
                                 Christophe Bourand, ChrisWebMarketing
@@ -300,7 +335,6 @@
                         </div>
                     </div>
                 </div>
-                    <div class="swiper-btn-next"><img src="./img/arrowleft.svg" alt=""></div>
 
                 <!-- If we need navigation buttons -->
 
@@ -309,7 +343,7 @@
         </div>
     </div>
 </section>
-        <div class="section__footer" >
+        <div class="section__footer">
     <section class="section__form " id="Contact Sales">
         <div class="container">
             <div class="title">apply to our<span class="docer">closed beta.</span></div>
@@ -350,23 +384,25 @@
                 <div class="footer__item">
                     <a href=""><img src="./img/footerlogo.svg" alt="" class="footer__logo"></a>
                     <div class="footer__social">
-                        <a href=""><img src="./img/facebook 2.svg" alt=""></a>
-                        <a href=""><img src="./img/instagram 1.svg" alt="" class="social"></a>
-                        <a href=""><img src="./img/linkedin 1.svg" alt=""></a>
+                        <a href="" class="social"><img src="./img/facebook 2.svg" alt=""></a>
+                        <a href="" class="social"><img src="./img/instagram 1.svg" alt=""></a>
+                        <a href="" class="social"><img src="./img/linkedin 1.svg" alt=""></a>
                     </div>
                 </div>
-                <div class="footer__item">
-                    <a href="" class="footer__title">About us</a>
-                    <a href="" class="footer__text">Bloga</a>
-                </div>
-                <div class="footer__item">
-                    <a href="" class="footer__title">Legal</a>
-                    <a href="" class="footer__text">Privacy Policy</a>
-                    <a href="" class="footer__text">Terms and conditions</a>
-                </div>
-                <div class="footer__item">
-                    <a href="" class="footer__title">Help</a>
-                    <a href="" class="footer__text">Contact us</a>
+                <div class="footer__item-list">
+                    <div class="footer__item">
+                        <a href="" class="footer__title">About us</a>
+                        <a href="" class="footer__text">Bloga</a>
+                    </div>
+                    <div class="footer__item">
+                        <a href="" class="footer__title">Legal</a>
+                        <a href="" class="footer__text">Privacy Policy</a>
+                        <a href="" class="footer__text">Terms and conditions</a>
+                    </div>
+                    <div class="footer__item">
+                        <a href="" class="footer__title">Help</a>
+                        <a href="" class="footer__text">Contact us</a>
+                    </div>
                 </div>
             </div>
             <div class="copyright">S SRL - VAT BE0729.842.450 - contact@s.io - Avenue Armand Huysmans 157,1050 Bruxelies

@@ -61,6 +61,11 @@ body {
     @media(max-width: $breakpoint768) {
         padding: 14px 32px;
     }
+    &:hover{
+        background-color: #edeae9;
+        color: $secondary;
+        transition: .3s all ease;
+    }
 }
 
 .title {

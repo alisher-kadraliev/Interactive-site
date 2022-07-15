@@ -4,8 +4,9 @@
 
     &__hero {
         padding: 61px 0 144px 0;
+
         @media(max-width: $breakpoint768) {
-        padding: 41px 0 70px 0;
+            padding: 41px 0 70px 0;
         }
     }
 }
@@ -199,10 +200,12 @@
     align-items: center;
     gap: 30px;
     padding-top: 23px;
+
     // .btn-up__hero
-@media(max-width: $breakpoint480) {
-gap: 15px;
-}
+    @media(max-width: $breakpoint480) {
+        gap: 15px;
+    }
+
     &__hero {
         padding: 16px 37px;
 
